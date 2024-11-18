@@ -23,7 +23,7 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
         </View>
         <View style={styles.bottomContainer}>
           <Text style={styles.entrada}>Cadastre-se ou entre:</Text>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
             <Image source={require('../../assets/IconeGoogle.png')} style={styles.iconGoogle} />
             <Text style={styles.buttonText}>Continuar com o Google</Text>
           </TouchableOpacity>
